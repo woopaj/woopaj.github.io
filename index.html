@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dudu - zegar odliczający czas do końca prezydentury Andrzeja</title>
+    <title>hello world</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -18,37 +18,7 @@
 </head>
 <body>
 
-<div id="countdown"></div>
-
-<script>
-    // Funkcja do obliczania odliczania
-    function odliczanieDoDaty() {
-        // Data docelowa (15 maja 2025)
-        const dataDocelowa = new Date('2025-05-15T00:00:00');
-
-        // Aktualna data i czas
-        const dataAktualna = new Date();
-
-        // Obliczanie różnicy czasu między datami
-        const roznicaCzasu = dataDocelowa - dataAktualna;
-
-        // Obliczanie dni, godzin, minut i sekund
-        const dni = Math.floor(roznicaCzasu / (1000 * 60 * 60 * 24));
-        const godziny = Math.floor((roznicaCzasu % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        const minuty = Math.floor((roznicaCzasu % (1000 * 60 * 60)) / (1000 * 60));
-        const sekundy = Math.floor((roznicaCzasu % (1000 * 60)) / 1000);
-
-        // Wyświetlanie odliczania na stronie
-        const countdownElement = document.getElementById('countdown');
-        countdownElement.innerHTML = `Odliczanie do końca prezydentury Andrzeja:<br> ${dni} dni, ${godziny} godzin, ${minuty} minut, ${sekundy} sekund.`;
-    }
-
-    // Aktualizacja odliczania co sekundę
-    setInterval(odliczanieDoDaty, 1000);
-
-    // Wywołanie funkcji odliczania na starcie
-    odliczanieDoDaty();
-</script>
+Hello world,
 
 </body>
 </html>
